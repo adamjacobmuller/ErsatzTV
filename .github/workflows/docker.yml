@@ -19,6 +19,10 @@ on:
         required: false
       docker_hub_access_token:
         required: false
+permissions:
+  contents: read
+  packages: write
+
 jobs:
   build_images:
     name: Build ${{ matrix.name }} image
